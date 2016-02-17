@@ -4,6 +4,8 @@ from django.core.urlresolvers import reverse
 from django.contrib import messages
 from django.shortcuts import render_to_response,redirect
 from django.template import RequestContext
+from django.contrib.auth.models import User
+
 
 from block.models import Block
 from comment.models import Comment
