@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{%block content %}
+<div class="row">
+    <div class="col-sm-12">
+	    <ol class="breadcrumb">
+		    <li><a href="{% url 'block_list' %}">首页</a></li>
+		    <li><a href="{% url 'article_list' b.id %}">{{ b.name }}</a></li>	
+		    <li class="active">{{ article.title }}</li>	
+	    </ol>
+    </div>
+</div>
+{%endblock%}
