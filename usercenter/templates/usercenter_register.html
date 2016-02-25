@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+    	<div class="col-md-6 col-md-offset-3">
+    	
+    		<div class="panel panel-info">
+    			<div class="panel-heading">
+    				<b>注册</b>
+    			</div>
+    		    <div class="panel-body">
+    			<form method="post" action="{% url 'usercenter_register' %}"> {% csrf_token %}
+    				<div class="input-group">
+    					<span class="input-group-addon">用户名&nbsp;&nbsp;&nbsp;</span>
+    					<input id="id_username" maxlength="254" name="username" type="text" class="form-control">  						
+    					</input>
+    				</div>	
+    				<br />
+    				<div class="input-group">
+    					<span class="input-group-addon">邮箱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    					<input id="id_email" name="email" type="text" class="form-control"> 			
+    					</input>
+    				</div>	
+    				<br />
+    				<div class="input-group">
+    				    <span class="input-group-addon">密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    				    <input id="id_password" name="password" type="password" class="form-control">
+    				    </input>
+    				</div>
+    				<br />
+    				<div class="input-group">
+    					<span class="input-group-addon">确认密码</span>
+    					<input id="id_repassword" name="repassword" type="password" class="form-control">					
+    					</input>
+    				</div>	
+    				<br />
+    				<input type="submit" class="btn btn-primary" value="注册"></input>
+    				
+    			</form>
+    		    </div>
+    			<div class="panel-footer">
+    				<a href="{% url 'login' %}">已有账户？去登录...</a>
+    				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    			</div>
+    		</div>
+    	</div>
+
+    </div>
+</div>
+{% endblock %}

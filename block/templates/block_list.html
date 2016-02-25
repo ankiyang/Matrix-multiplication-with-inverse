@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+  	<div class="row">
+  		<div class="col-sm-8 blog-main">
+  			{% for b in blocks %}
+  			<div class="panel panel-info">
+  				<div class="panel-heading">
+  					<a href="{% url 'article_list' b.id %}">{{ b.name }}</a>
+  					<span class="pull-right">管理员：{{ b.manager.username }}</span>
+  				</div>
+  				<div class="panel-body">
+  					<span style="font-size: 13px;">{{ b.desc}}</span>
+  				</div>
+  			</div>
+        {% endfor %}
+  		</div>
+      <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="alert alert-success">
+              {% if user.is_authenticated %}
+                  <p>{{ user.username }}. 欢迎来到论坛.</p>
+                  <a href="{% url 'logout_then_login' %}">登出</a>
+              {% else %}
+                  <p>匿名用户.请<a href="{% url 'login'}">登录</a></p>
+              {% endif %}
+          </div>
+      </div>            
+  	</div>
+{%endblock%}
