@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd51e9e3-2923-4eef-acc0-5592ec0e1efb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/article/views.py" afterPath="$PROJECT_DIR$/article/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/block/admin.py" afterPath="$PROJECT_DIR$/block/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/block/templates/block_list.html" afterPath="$PROJECT_DIR$/block/templates/block_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myforum/urls.py" afterPath="$PROJECT_DIR$/myforum/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/registration/login.html" afterPath="$PROJECT_DIR$/templates/registration/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usercenter/templates/usercenter_register.html" afterPath="$PROJECT_DIR$/usercenter/templates/usercenter_register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usercenter/urls.py" afterPath="$PROJECT_DIR$/usercenter/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usercenter/views.py" afterPath="$PROJECT_DIR$/usercenter/views.py" />
     </list>
     <ignored path="forum_anki.iws" />
     <ignored path=".idea/workspace.xml" />
