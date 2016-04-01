@@ -14,8 +14,7 @@ from models import ActivateCode
 def register(request):
 	error=""
 	if request.method == "GET":
-		return render_to_response("usercenter_register.html",{},
-			context_instance=RequestContext(request))
+		return render_to_response("usercenter_register.html",{},context_instance=RequestContext(request))
 	else:
 		username=request.POST['username'].strip()
 		email=request.POST['email'].strip()
@@ -41,8 +40,7 @@ def register(request):
 			send_mail(u'[Python部落论坛]激活邮件',u'您的激活链接为:%s' % activate_link,'398753283@qq.com',
 				[email],fail_silently=False)
 		else:
-		    return render_to_response("usercenter_register.html",{"error":error},
-		    	context_instance=RequestContext(request))	
+		    return render_to_response("usercenter_register.html",{"error":error},context_instance=RequestContext(request))
 		return redirect(reverse("login"))
 
 def activate(request,code):

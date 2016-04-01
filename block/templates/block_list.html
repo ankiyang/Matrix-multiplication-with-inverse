@@ -20,7 +20,7 @@
                   <p>{{ user.username }}. 欢迎来到论坛.</p>
                   <a href="{% url 'logout_then_login' %}">登出</a>
               {% else %}
-                  <p>匿名用户.请<a href="{% url 'login'}">登录</a></p>
+                  <p>匿名用户.请<a href="{% url 'login' %}">登录</a></p>
               {% endif %}
           </div>
       </div>            
