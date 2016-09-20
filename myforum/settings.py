@@ -123,7 +123,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-EMAIL_HOST="smtp.qq.com"
-EMAIL_PORT=25
-EMAIL_HOST_USER="398753283@qq.com"
-EMAIL_HOST_PASSWORD="linyoujiayoga"
